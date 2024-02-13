@@ -1,0 +1,479 @@
+*{
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style-type: none;
+   box-sizing: border-box;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1::selection, h2::selection, h3::selection, h4::selection,p::selection {
+	color: yellow;
+	background-color: #000;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+::-webkit-scrollbar{
+   width: 0.4rem;
+}
+::-webkit-scrollbar-track{
+  background-color: grey;
+}
+::-webkit-scrollbar-thumb{
+  background-color: black;
+}
+
+#main{
+   width: 100%;
+   height: 100%;
+}
+#nav{
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 15px 40px;
+  position: fixed;
+  width: 100%;
+}
+#nav h3 a {
+	color: #fff;
+}
+#nav h3 {
+	font-size: 20px;
+	background-color: #000;
+	color: #fff;
+	padding: 10px 15px;
+	border-radius: 50px;
+	margin-left: 5px;
+}
+
+#intro{
+  height: 62%;
+  width: 100%;
+  padding: 50px 60px;
+
+}
+#intro h1{
+  font-size: 120px;
+  line-height: 100px;
+  letter-spacing: -3px;
+}
+#place {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 35px;
+	align-items: center;
+}
+#place h3, #place h4{
+   font-size: 30px;
+   font-weight: 600;
+}
+
+#hero{
+  width: 100%;
+  height: 90%;
+  background-image: url(spieder-man.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+#about {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  padding: 30px 50px;
+}
+#about h2 {
+	border-right: 2px solid #000;
+	width: 60%;
+	font-size: 53px;
+	line-height: 65px;
+}
+#about-part2 {
+	width: 37%;
+	height: 80%;
+	padding: 0 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+#icons i {
+	font-size: 25px;
+	margin-right: 10px;
+	flex-direction: row;
+	color: #fff;
+	padding: 5px;
+	border: 2px solid #000;
+	background-color: #000;
+	border-radius: 50px;
+}
+
+#work {
+	height: 60%;
+	width: 100%;
+	border-top: 2px solid;
+  display: flex;
+  padding: 30px 50px;
+}
+#work1 {
+	width: 30%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	border-right: 2px solid #000;
+  padding-right: 55px;
+}
+#work1 h3, #work1 i{
+  font-size: 25px;
+}
+
+
+#work {
+	height: 60%;
+	width: 100%;
+	border-top: 2px solid;
+  display: flex;
+  padding: 30px 50px;
+}
+.hood {
+	display: flex;
+	justify-content: center;
+	font-size: 30px;
+}
+#work1 {
+	width: 30%;
+	height: 58vh;
+	display: flex;
+	justify-content: space-between;
+	border-right: 2px solid #000;
+  padding-right: 55px;
+}
+#work1 h3, #work1 i{
+  font-size: 25px;
+}
+
+#work2{
+  width: 70%;
+  height: 100%;
+  padding: 0 50px;
+}
+.work2-part {
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+.work2-part:nth-child(1){
+  border-bottom: 2px solid #000;
+}
+.work2-part .elem {
+	width: 30%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.work2-part .elem:nth-child(1){
+  border-right: 1px solid #000;
+  padding-right: 30px;
+
+}
+.work2-part .elem:nth-child(2){
+  border-right: 1px solid #000;
+  padding-right: 30px;
+}
+
+
+.elem h4{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+.elem p{
+  font-size: 20px;
+  font-weight: 200;
+  color: #000;
+}
+.elem img {
+	width: 50%;
+  margin-bottom: 5px;
+}
+.word img {
+	width: 59%;
+	margin-bottom: 22px;
+}
+#nav .heart {
+	color: red;
+}
+
+#back-light h5 {
+	color: #fff;
+	font-size: 25px;
+
+}
+#back-light {
+	background: #000;
+	padding: 35px 15px;
+	align-items: center;
+	text-align: center;
+	margin-top: 80px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#study {
+	padding: 30px;
+	margin: 50px 0;
+	width: 100%;
+	height: 50vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#education {
+	width: 40%;
+	background: rgb(0, 0, 0);
+	height: 100%;
+	color: #fff;
+	padding: 30px;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+	border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+#edu-box1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 30px;
+}
+#edu-box1 h3 {
+	font-size: 25px;
+	font-weight: 500;
+}
+#edu-box2 p {
+	font-size: 16px;
+	color: #666;
+}
+#edu-box2 h3 {
+	padding-bottom: 5px;
+	letter-spacing: 0.5px;
+}
+#edu-box1 i {
+	font-size: 30px;
+}
+#experience {
+	width: 40%;
+	background: #fff;
+	height: 100%;
+	padding: 30px;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+	border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+#experience:hover{
+	 background-color: #000;
+	 color: #fff;
+	 transition: 0.5s ease-in;
+}
+
+
+footer {
+	padding: 30px 100px;
+	background-color: #ffc83d;
+	text-align: center;
+	border-radius: 50px;
+	width: 100%;
+}
+footer p {
+	font-size: 18px;
+}
+footer h3 {
+	font-size: 45px;
+	margin-bottom: 10px;
+}
+
+
+#footer-left h6 {
+	font-size: 25px;
+}
+#footer-left {
+	width: 50%;
+	text-align: left;
+}
+#footer-main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 30px;
+}
+#footer-right i {
+	font-size: 28px;
+	color: #000;
+	padding-right: 20px;
+}
+
+#footer-right i.call:hover {
+	color: blue;
+	transform: scaleY(1);
+}
+#footer-right i.chat:hover {
+	color: rgb(17, 246, 82);
+	transform: scaleY(1);
+}
+#footer-right i.email:hover {
+	color: rgb(211, 29, 29);
+	transform: scaleY(1);
+}
+
+
+@media  (max-width:450px){
+	
+	#nav {
+	padding: 15px;
+}
+	#nav h3{
+		font-size: 15px;
+	}
+ #intro{
+	padding: 20px;
+	height: 18vh;
+}	
+#hero {
+	width: 100%;
+	background-size: contain;
+	height: 33%;
+	overflow: hidden;
+}
+#intro h1 {
+	font-size: 30px;
+	line-height: 30px;
+	letter-spacing: -1.8px;
+}
+#nav {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+ 
+	#place h3, #place h4 {
+    font-size: 18px;
+}
+#study {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 75px 0;
+}
+#education{
+	margin-bottom: 20px;
+}
+#education, #experience {
+	width: 100%;
+}
+#work {
+	width: 100%;
+	height: 25vh;
+	padding: 35px 10px;
+}
+#work1 {
+	width: 33%;
+	height: 26vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 10px 0 10px;
+}
+#work1  h3{
+	font-size: 16px;
+}
+#work i{
+	font-size: 20px;
+}
+#work2 {
+	width: 67%;
+	padding: 0 1px 0 5px;
+}
+#work2 h4{
+	font-size: 22px;
+}
+.elem h5 {
+	font-size: 12px;
+}
+.work2-part .elem:nth-child(1), .work2-part .elem:nth-child(2){
+	padding: 0;
+}
+.elem.word {
+	padding-right: 12px !important;
+}
+.work2-part {
+	display: flex;
+	align-items: center;
+	padding: 20px 0;
+	justify-content: space-between;
+}
+.word img {
+	width: 65%;
+	margin-bottom: 12px;
+}
+footer {
+	width: 100%;
+	padding: 25px 43px;
+}
+footer h3 {
+	font-size: 20px;
+}
+footer p {
+	font-size: 13px;
+}
+#footer-main{
+	margin-top: 17px;
+}
+#footer-left h6{
+	font-size: 20px;
+}
+#footer-right a i{
+  font-size: 22px;
+}
+#about {
+	width: 100%;
+	padding: 0px 25px;
+	height: 20vh;
+}
+#about h2 {
+	font-size: 23px;
+	line-height: 30px;
+}
+#about-part2 {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	padding: 0 28px;
+}
+#about-part2 #icons a i{
+	font-size: 18px;
+}
+
+#icons {
+	display: flex;
+	justify-content: center;
+	padding-left: 20px;
+}
+
+#back-light h5 {
+	font-size: 15px;
+}
+}
